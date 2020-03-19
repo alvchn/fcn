@@ -1,4 +1,4 @@
-This repository contains source code associated with our paper, "Deep learning robotic guidance for autonomous vascular access". Using the code requires basic knowledge of Python programming, Tensorflow, and network training and evaluation procedures.
+Use of this code requires basic knowledge of Python programming, Tensorflow, and network training and evaluation procedures.
 
 ## References
 
