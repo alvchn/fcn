@@ -16,7 +16,7 @@ Tensorflow VNet
 }
 ```
 
-Tensorflow Unet
+Tensorflow UNet
 ```
 @article{akeret2017radio,
   title={Radio frequency interference mitigation using deep convolutional neural networks},
