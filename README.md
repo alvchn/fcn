@@ -1,4 +1,4 @@
-Use of this code requires basic knowledge of Python programming, Tensorflow, and network training and evaluation procedures.
+Use of this code requires basic knowledge of Python, Tensorflow, and network training and evaluation procedures.
 
 ## References
 
