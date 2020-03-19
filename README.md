@@ -1,5 +1,46 @@
 This repository contains source code associated with our paper, "Deep learning robotic guidance for autonomous vascular access". Using the code requires basic knowledge of Python programming, Tensorflow, and network training and evaluation procedures.
 
+## References
+
+Prior work that was relevant to the development of the code and model below:
+
+Tensorflow VNet
+```
+@misc{jackyko1991_vnet_tensorflow,
+  author = {Jacky KL Ko},
+  title = {Implementation of vnet in tensorflow for medical image segmentation},
+  howpublished = {\url{https://github.com/jackyko1991/vnet-tensorflow}},
+  year = {2018},
+  publisher={Github},
+  journal={GitHub repository},
+}
+```
+
+Tensorflow Unet
+```
+@article{akeret2017radio,
+  title={Radio frequency interference mitigation using deep convolutional neural networks},
+  author={Akeret, Joel and Chang, Chihway and Lucchi, Aurelien and Refregier, Alexandre},
+  journal={Astronomy and Computing},
+  volume={18},
+  pages={35--39},
+  year={2017},
+  publisher={Elsevier}
+}
+```
+
+TensorFlow convolutional LSTM cell
+```
+@article{carlthome,
+  author = {carlthome},
+  title = {A ConvLSTM cell for TensorFlow's RNN API},
+  howpublished = {\url{https://github.com/carlthome/tensorflow-convlstm-cell}},
+  year={2017},
+  publisher={Github},
+  journal={GitHub repository},
+}
+```
+
 ## Dependencies
 
 The models were developed using Python3 with Tensorflow 1.4. The Python dependencies for running the code include
