@@ -29,7 +29,7 @@ Tensorflow UNet
 }
 ```
 
-TensorFlow convolutional LSTM cell
+Tensorflow convolutional LSTM cell
 ```
 @article{carlthome,
   author = {carlthome},
