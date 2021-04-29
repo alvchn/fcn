@@ -176,62 +176,7 @@ Other class functions for training and testing batches:
     def getResults() # handles data writing, data display, and loss calculation during training and testing
 ```
 
-The model definitions are found in ```fcn_model/fcn_model.py``` and includes the following network layer definitions:
-
-```
-def prelu() # parametric leaky Relu nonlinear activation function
-
-def convolution_2d() # standard convolution operator
-def deconvolution_2d() # standard transpose convolution operator
-def convolution_block() # convolution block (3x3 kernel size) (used in encoder)
-def convolution_block_2() # convolution block (3x3 kernel size) preceded by skip connection (used in decoder)
-def convolution_block_in() # convolution block (variable kernel size) (used in encoder)
-def convolution_block_2_in() # convolution block (variable kernel size) preceded by skip connection (used in decoder)
-def convolution_block_in_batchnorm() # convolution block (variable kernel size) with batch norm layers (used in encoder)
-def convolution_block_2_in_batchnorm() # convolution block (variable kernel size) with batch norm layers and preceded by skip connection (used in decoder)
-
-def down_convolution() # stride-2 convolutions for down sampling (used in encoder)
-def up_convolution() # stride-2 tranpose convolutions for up sampling (used in decoder)
-def up_convolution_resize() # stride-2 resize-up convolutions for up sampling (used in decoder)
-
-def fcn_encoder() # encoder
-def fcn_encoder_batchnorm() # encoder with batch normalization
-def fcn_decoder() # decoder
-def fcn_decoder_batchnorm() # decoder with batch normalization
-def fcn_encoder_decoder() # encoder-decoder
-
-def convGRU_2d_gate() # convolutional gated recurrent unit
-def convGRU_2d_output() # convolutional gated recurrent unit output
-def fcn_convGRU() # convolutional GRU structure
-
-def fcn_outer() # overall encoder-decoder structure
-def fcn_outer_batchnorm() # overall encoder-decoder structure with batch normalization
-def rfcn_outer() # overall recurrent encoder-decoder structure
-def rfcn_outer_batchnorm() # overall recurrent encoder-decoder structure with batch normalization
-
-```
-
-Loss functions used in the reported studies are defined in ```/fcn_model/fcn_lossfunc.py```:
-
-```
-def sigmoid()
-def computeModifiedHausdorffDistance2D_TF()
-def computeModifiedHausdorffDistance2D()
-def computeWeightedCrossEntropyWithLogits_TF()
-def computeWeightedCrossEntropyWithLogits()
-def computeDiceLoss_TF()
-def computeGeneralizedDiceLoss2D_TF()
-def computeGeneralizedDiceLoss_TF()
-def computeDiceScorePrediction()
-def computeMeanSquaredLoss_TF()
-def computeMeanSquaredLoss()
-def setLoss_TF()
-def evalLoss_TF()
-def evalLoss_customized()
-
-```
-
-Finally, a number of utility functions are provided in ```/fcn_model/fcn_utilities.py```:
+A number of utility functions are provided in ```/fcn_model/fcn_utilities.py```:
 
 ```
 def showActivationMaps() # show network activation maps at each spatial resolution layer
@@ -240,7 +185,6 @@ def writeOutputsToFile() # write network predictions to specified file path
 ```
 
 ## Citation
-Please cite our paper if you use the data or code
 ```
 @article{
   title={Deep learning robotic guidance for autonomous vascular access},
