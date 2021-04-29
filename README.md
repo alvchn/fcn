@@ -72,7 +72,7 @@ Output predictions may be (optionally) written to disk as .png image files.
 
 ## Train and test models from scratch
 
-The Python scripts for training the models from scratch are included under ```/nir_trainer``` and ```/dus_trainer```. Both follow a similar set up:
+Python scripts for training models from scratch are included under ```/nir_trainer``` and ```/dus_trainer```. Both follow a similar set up:
 
 ```nir_setup.py``` and ```dus_setup.py``` parse the data into training, validation, and test splits. The script use a list structure given by
 
@@ -83,7 +83,7 @@ datalist = [[dataPath1, startingFrameIndex, endingFrameIndex, timeSteps],
            ]
 ```
 
-For single frame model (FCN), data txt files should be a list of image file names separated by line breaks. For time series (Rec-FCN), data txt files should be a list of image file names separated by line breaks, which each image sequence is separated by a dash ("-"), i.e.,
+For single frame model (FCN), data txt files should be a list of image file names separated by line breaks. For recurrent model (Rec-FCN), data txt files should be a list of image file names separated by line breaks, which each image sequence is separated by a dash ("-"), i.e.,
 
 ```
 relative_path\sequence1\data_000001.mat
@@ -168,8 +168,11 @@ class ModelTrainer:
                    show_images = False,
                    show_activation_maps = False
                    ):
-                   
+```
+
 Other class functions for training and testing batches:
+
+```
     def createMiniBatch() # creates mini-batches for training
     def createMiniBatchForTesting() # creates mini-batches for testing
     def computeCompositeTransforms() # creates the composite transforms for data augmentation using SimpleITK
