@@ -2,7 +2,7 @@ Use of this code requires basic knowledge of Python, Tensorflow, and network tra
 
 ## References
 
-Prior work that was relevant to the development of the code and model below:
+Other relevant work:
 
 Tensorflow VNet
 ```
@@ -38,6 +38,63 @@ Tensorflow convolutional LSTM cell
   year={2017},
   publisher={Github},
   journal={GitHub repository},
+}
+```
+
+Good references for CNN/ConvRNN segmentation models
+```
+@article{meiburger2017,
+  author = {Meiburger, Kristen M and Acharya, U Rajendra and Molinari, Filippo},
+  title = {Automated localization and segmentation techniques for B-mode ultrasound images: a review},
+  howpublished = {\url{https://www.sciencedirect.com/science/article/abs/pii/S0010482517303888}},
+  year={2018},
+}
+```
+
+```
+@article{chen2016,
+  author = {Chen, Jianxu and Yang, Lin and Zhang, Yizhe and Alber, Mark and Chen, Danny Z},
+  title = {Combining fully convolutional and recurrent neural networks for 3D biomedical image segmentation},
+  howpublished = {\url{https://arxiv.org/abs/1609.01006}},
+  year={2016},
+}
+```
+
+```
+@article{gao2017,
+  author = {Gao, Yang and Phillips, Jeff M and Zheng, Yan and Min, Renqiang and Fletcher, Thomas P and Gerig, Guido},
+  title = {Fully convolutional structured LSTM networks},
+  howpublished = {\url{https://arxiv.org/pdf/1609.01006.pdf}},
+  journal={2018 IEEE 15th International Symposium on Biomedical Imaging (ISBI 2018)},
+  year={2017},
+  publisher={IEEE}
+}
+```
+
+```
+@article{milletari2018,
+  author = {Milletari, Fausto and Rieke, Nicola and Baust, Maximilian and Esposito, Marco and Navab, Nassir},
+  title = {CFCM: segmentation via coarse to fine context memory},
+  howpublished = {\url{https://arxiv.org/abs/1806.01413}},
+  year={2018},
+}
+```
+
+```
+@article{arbelle2019,
+  author = {Arbelle, Assaf and Raviv, Tammy Riklin},
+  title = {Microscopy cell segmentation via convolutional LSTM networks},
+  howpublished = {\url{https://arxiv.org/abs/1805.11247}},
+  year={2019},
+}
+```
+
+```
+@article{ni2020,
+  author = {Hao Ni},
+  title = {Deep learning for 4D longitudinal segmentation of MRI brain tissues and glioma},
+  howpublished = {\url{https://repository.tudelft.nl/islandora/object/uuid%3Ae34a8dee-0bdb-4e79-9d42-3fc3998bbb23}},
+  year={2020},
 }
 ```
 
@@ -185,15 +242,4 @@ A number of utility functions are provided in ```/fcn_model/fcn_utilities.py```:
 def showActivationMaps() # show network activation maps at each spatial resolution layer
 def showImagesAsSubplots() # show input and output images as subplots
 def writeOutputsToFile() # write network predictions to specified file path
-```
-
-## Citation
-```
-@article{
-  title={Deep learning robotic guidance for autonomous vascular access},
-  author={Chen, Alvin and Balter, Max and Maguire, Timothy and Yarmush, Martin L},
-  journal={Nature Machine Intelligence},
-  year={2020},
-  publisher={Nature Publishing Group}
-}
 ```
