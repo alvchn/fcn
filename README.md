@@ -1,103 +1,5 @@
 Use of this code requires basic knowledge of Python, Tensorflow, and network training and evaluation procedures.
 
-## References
-
-Other relevant work:
-
-Tensorflow VNet
-```
-@misc{jackyko1991_vnet_tensorflow,
-  author = {Jacky KL Ko},
-  title = {Implementation of vnet in tensorflow for medical image segmentation},
-  howpublished = {\url{https://github.com/jackyko1991/vnet-tensorflow}},
-  year = {2018},
-  publisher={Github},
-  journal={GitHub repository},
-}
-```
-
-Tensorflow UNet
-```
-@article{akeret2017radio,
-  title={Radio frequency interference mitigation using deep convolutional neural networks},
-  author={Akeret, Joel and Chang, Chihway and Lucchi, Aurelien and Refregier, Alexandre},
-  journal={Astronomy and Computing},
-  volume={18},
-  pages={35--39},
-  year={2017},
-  publisher={Elsevier}
-}
-```
-
-Tensorflow convolutional LSTM cell
-```
-@article{carlthome,
-  author = {carlthome},
-  title = {A ConvLSTM cell for TensorFlow's RNN API},
-  howpublished = {\url{https://github.com/carlthome/tensorflow-convlstm-cell}},
-  year={2017},
-  publisher={Github},
-  journal={GitHub repository},
-}
-```
-
-Good references for CNN/ConvRNN segmentation models
-```
-@article{meiburger2017,
-  author = {Meiburger, Kristen M and Acharya, U Rajendra and Molinari, Filippo},
-  title = {Automated localization and segmentation techniques for B-mode ultrasound images: a review},
-  howpublished = {\url{https://www.sciencedirect.com/science/article/abs/pii/S0010482517303888}},
-  year={2018},
-}
-```
-
-```
-@article{chen2016,
-  author = {Chen, Jianxu and Yang, Lin and Zhang, Yizhe and Alber, Mark and Chen, Danny Z},
-  title = {Combining fully convolutional and recurrent neural networks for 3D biomedical image segmentation},
-  howpublished = {\url{https://arxiv.org/abs/1609.01006}},
-  year={2016},
-}
-```
-
-```
-@article{gao2017,
-  author = {Gao, Yang and Phillips, Jeff M and Zheng, Yan and Min, Renqiang and Fletcher, Thomas P and Gerig, Guido},
-  title = {Fully convolutional structured LSTM networks},
-  howpublished = {\url{https://arxiv.org/pdf/1609.01006.pdf}},
-  journal={2018 IEEE 15th International Symposium on Biomedical Imaging (ISBI 2018)},
-  year={2017},
-  publisher={IEEE}
-}
-```
-
-```
-@article{milletari2018,
-  author = {Milletari, Fausto and Rieke, Nicola and Baust, Maximilian and Esposito, Marco and Navab, Nassir},
-  title = {CFCM: segmentation via coarse to fine context memory},
-  howpublished = {\url{https://arxiv.org/abs/1806.01413}},
-  year={2018},
-}
-```
-
-```
-@article{arbelle2019,
-  author = {Arbelle, Assaf and Raviv, Tammy Riklin},
-  title = {Microscopy cell segmentation via convolutional LSTM networks},
-  howpublished = {\url{https://arxiv.org/abs/1805.11247}},
-  year={2019},
-}
-```
-
-```
-@article{ni2020,
-  author = {Hao Ni},
-  title = {Deep learning for 4D longitudinal segmentation of MRI brain tissues and glioma},
-  howpublished = {\url{https://repository.tudelft.nl/islandora/object/uuid%3Ae34a8dee-0bdb-4e79-9d42-3fc3998bbb23}},
-  year={2020},
-}
-```
-
 ## Dependencies
 
 The models were developed using Python3 with Tensorflow 1.4. The Python dependencies for running the code include
@@ -242,4 +144,112 @@ A number of utility functions are provided in ```/fcn_model/fcn_utilities.py```:
 def showActivationMaps() # show network activation maps at each spatial resolution layer
 def showImagesAsSubplots() # show input and output images as subplots
 def writeOutputsToFile() # write network predictions to specified file path
+```
+
+## References
+
+Tensorflow repositories:
+
+Tensorflow VNet
+```
+@misc{jackyko1991_vnet_tensorflow,
+  author = {Jacky KL Ko},
+  title = {Implementation of vnet in tensorflow for medical image segmentation},
+  howpublished = {\url{https://github.com/jackyko1991/vnet-tensorflow}},
+  year = {2018},
+  publisher={Github},
+  journal={GitHub repository},
+}
+```
+
+Tensorflow UNet
+```
+@article{akeret2017radio,
+  title={Radio frequency interference mitigation using deep convolutional neural networks},
+  author={Akeret, Joel and Chang, Chihway and Lucchi, Aurelien and Refregier, Alexandre},
+  journal={Astronomy and Computing},
+  volume={18},
+  pages={35--39},
+  year={2017},
+  publisher={Elsevier}
+}
+```
+
+Tensorflow convolutional LSTM/GRU cell
+```
+@article{carlthome,
+  author = {carlthome},
+  title = {A ConvLSTM cell for TensorFlow's RNN API},
+  howpublished = {\url{https://github.com/carlthome/tensorflow-convlstm-cell}},
+  year={2017},
+  publisher={Github},
+  journal={GitHub repository},
+}
+```
+
+Good references for CNN/ConvRNN models
+```
+@article{meiburger2017,
+  author = {Meiburger, Kristen M and Acharya, U Rajendra and Molinari, Filippo},
+  title = {Automated localization and segmentation techniques for B-mode ultrasound images: a review},
+  howpublished = {\url{https://www.sciencedirect.com/science/article/abs/pii/S0010482517303888}},
+  year={2018},
+}
+```
+
+```
+@article{chen2016,
+  author = {Chen, Jianxu and Yang, Lin and Zhang, Yizhe and Alber, Mark and Chen, Danny Z},
+  title = {Combining fully convolutional and recurrent neural networks for 3D biomedical image segmentation},
+  howpublished = {\url{https://arxiv.org/abs/1609.01006}},
+  year={2016},
+}
+```
+
+```
+@article{gao2017,
+  author = {Gao, Yang and Phillips, Jeff M and Zheng, Yan and Min, Renqiang and Fletcher, Thomas P and Gerig, Guido},
+  title = {Fully convolutional structured LSTM networks},
+  howpublished = {\url{https://arxiv.org/pdf/1609.01006.pdf}},
+  journal={2018 IEEE 15th International Symposium on Biomedical Imaging (ISBI 2018)},
+  year={2017},
+  publisher={IEEE}
+}
+```
+
+```
+@article{milletari2018,
+  author = {Milletari, Fausto and Rieke, Nicola and Baust, Maximilian and Esposito, Marco and Navab, Nassir},
+  title = {CFCM: segmentation via coarse to fine context memory},
+  howpublished = {\url{https://arxiv.org/abs/1806.01413}},
+  year={2018},
+}
+```
+
+```
+@article{arbelle2019,
+  author = {Arbelle, Assaf and Raviv, Tammy Riklin},
+  title = {Microscopy cell segmentation via convolutional LSTM networks},
+  howpublished = {\url{https://arxiv.org/abs/1805.11247}},
+  year={2019},
+}
+```
+
+```
+@article{ni2020,
+  author = {Hao Ni},
+  title = {Deep learning for 4D longitudinal segmentation of MRI brain tissues and glioma},
+  howpublished = {\url{https://repository.tudelft.nl/islandora/object/uuid%3Ae34a8dee-0bdb-4e79-9d42-3fc3998bbb23}},
+  year={2020},
+}
+```
+
+Our paper
+```
+@article{chen2020,
+  author = {Chen, Alvin and Balter, Max and Maguire, Tim and Yarmush, Martin L},
+  title = {Deep learning robotic guidance for autonomous vascular access},
+  howpublished = {\url{https://doi.org/10.1038/s42256-020-0148-7}},
+  year={2020},
+}
 ```
