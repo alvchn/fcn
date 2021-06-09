@@ -244,12 +244,23 @@ Good references for CNN/ConvRNN models
 }
 ```
 
-Our paper
+Papers that made use of parts of this repository:
 ```
 @article{chen2020,
   author = {Chen, Alvin and Balter, Max and Maguire, Tim and Yarmush, Martin L},
   title = {Deep learning robotic guidance for autonomous vascular access},
   howpublished = {\url{https://doi.org/10.1038/s42256-020-0148-7}},
   year={2020},
+  publisher={Springer}
+}
+```
+
+```
+@article{lee2020,
+  author = {Chen, Alvin and Balter, Max and Maguire, Tim and Yarmush, Martin L},
+  title = {Guidewire segmentation in 4D ultrasound sequences using recurrent fully convolutional networks},
+  howpublished = {\url{https://link.springer.com/chapter/10.1007/978-3-030-60334-2_6}},
+  year={2020},
+  publisher={Springer}
 }
 ```
