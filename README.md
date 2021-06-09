@@ -244,7 +244,7 @@ Good references for CNN/ConvRNN models
 }
 ```
 
-Papers that made use of parts of this repository:
+Papers that made use of parts of this code:
 ```
 @article{chen2020,
   author = {Chen, Alvin and Balter, Max and Maguire, Tim and Yarmush, Martin L},
