@@ -257,7 +257,7 @@ Papers that made use of parts of this repository:
 
 ```
 @article{lee2020,
-  author = {Chen, Alvin and Balter, Max and Maguire, Tim and Yarmush, Martin L},
+  author = {Lee, Brian C and Vaidya, Kunal and Jain, Ameet K and Chen, Alvin},
   title = {Guidewire segmentation in 4D ultrasound sequences using recurrent fully convolutional networks},
   howpublished = {\url{https://link.springer.com/chapter/10.1007/978-3-030-60334-2_6}},
   year={2020},
