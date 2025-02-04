@@ -1,4 +1,4 @@
-Use of this code requires basic knowledge of Python, Tensorflow, and network training and evaluation procedures.
+This repository contains Python code for recurrent fully convolutional network (RFCN) models from our paper "Deep learning robotic guidance for autonomous vascular access" (https://www.nature.com/articles/s42256-020-0148-7).
 
 ## Dependencies
 
